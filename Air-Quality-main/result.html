@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+               });
+    </script>
+    <main>
+        <h2>Result</h2>
+          <p class="centered-paragraph">The result of our project is a resounding success below are all the different inputs and their results.<br>
+            We have made a start-up menu that allows users quick access to common run modes, or their own custom inputs.<br>
+
+              <span class="space"></span>
+        <span class="space"></span>
+            <p class="centered-paragraph">This is the boot up sequence that we have made available for those using this sensor.<br>
+                <img class="centered-img" src="pictures/step1.png"></p>
+        <span class="space"></span>
+            <p class="centered-paragraph">Here is it running in the default state that the given code expected<br>
+                <img class="centered-img" src="pictures/step2.png"></p>
+        <span class="space"></span>
+            <p class="centered-paragraph">Here is it running with warnings active for the plants we used to test this.<br>
+                <img class="centered-img" src="pictures/step3.png"></p>
+        <span class="space"></span>
+            <p class="centered-paragraph">Here is it running with warnings active for user entered minimum/maximum temperatures.<br>
+                <img class="centered-img" src="pictures/step4.png"></p>
+        <span class="space"></span>
+            <p class="centered-paragraph">Here is it closing out the program<br>
+                <img class="centered-img" src="pictures/step5.png"></p>
+        <p class="centered-paragraph"> Here’s how it works:
+
+The sensor measures the temperature and humidity around it.
+The Raspberry Pi reads that data.
+Our monitor displays the data so you can see the readings live.
+        </p>
+
+    </main>
+</body>
+</html>

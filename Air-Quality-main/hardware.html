@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hardware Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+    <div class="container">
+        <h2>Hardware</h2>
+        <div class="content-row">
+            <div class="column">
+                <img src="pictures/piBoard-wide.jpg" alt="Raspberry Pi Board">
+                <p class="caption">This is the Raspberry Pi Board.</p>
+            </div>
+            <div class="column">
+                <img src="pictures/soldering2.jpg" alt="Soldering Detail 1">
+                <p class="caption">Closer look at the soldering to the BME280.</p>
+            </div>
+            <div class="column">
+                <img src="pictures/soldering1.jpg" alt="Soldering Detail 2">
+                <p class="caption">Closer look at the soldering from the board.</p>
+            </div>
+        </div>
+        <div class="text-content">
+            <p>This is the board pictured to the left, with all the soldering and pins to boot.
+                This is the Raspberry Pi Zero 2 and BME280 connected with the basic soldering kit's cords.</p>
+            <p>Pictured first on the right here is a closer look at the soldering to the BME280 the first thing we soldered.
+                It took some time but turned out great!</p>
+            <p>Furthest on the right is a closer look at the soldering from the board the last part we soldered.</p>
+            <p>It is a decent board despite its issues. One of which was the proprietary micro cords which were a bit of trouble to get a hold of. Online is probably
+                the only good place to get them so look there first. Lastly third-party cheap cords, such as the USB coupling, failed to yield any hardware interactivity.</p>
+        </div>
+        <p class="centered-paragraph">The Air Quality Team does advocate for getting and working with a board like this,
+            just know the hoops you may have to jump through for it to work with your own hardware on hand.
+        </p>
+    </div>
+</body>
+</html>

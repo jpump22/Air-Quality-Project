@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extras Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <h2>Extras</h2>
+    <main>
+        <div class="flex-container">
+            <div class="flex-item green-bar">
+                <h3>Issues Faced:</h3>
+                <ul class="indented-list">
+                    <li>Parts not arriving on time:
+                        <ul>
+                            <li>That held us back from starting sooner on Phase 1.</li>
+                            <li>Parts finally arrived.</li>
+                        </ul>
+                        <br>
+                    </li>
+                    <li>Ordered the wrong Raspberry Pi:
+                        <ul>
+                            <li>Ordered the correct Raspberry Pi.</li>
+                        </ul>
+                        <br>
+                         <li>Issues with connecting I2C:
+                        <ul>
+                            <li>Raspberry pi would not connect locally on I2C after various attempts.</li>
+                        </ul>
+                        <br>
+                    </li>
+                    <li>Struggled with the virtual environment set up:
+                        <ul>
+                            <li>Got help from another group and did own research.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-item green-bar">
+                <h3>Project Distribution:</h3>
+                <ul class="indented-list">
+                    <li>We all collaborated & communicated throughout this project with completing the reports</li>
+                    <li>Connected with each other on GitHub and used PyCharm for the website</li>
+                    <li>Taylin:
+                        <ul>
+                            <li>Ordered the parts for this project</li>
+                            <li>Found resources/guides</li>
+                            <li>Resoldered whenever a wire disconnected</li>
+                            <li>Worked on the PowerPoint</li>
+                        </ul>
+                    </li>
+                    <li>Jennifer:
+                        <ul>
+                            <li>Soldered the pins onto the Raspberry Pi Zero 2 W</li>
+                            <li>Soldered the wires to the pins</li>
+                            <li>Took care of the plants</li>
+                            <li>Worked on the HTML for our website</li>
+                        </ul>
+                    </li>
+                    <li>Benjamin:
+                        <ul>
+                            <li>Soldered the pins to the sensor and then soldered the wires to the pins</li>
+                            <li>Set up the virtual environment</li>
+                            <li>Worked on the code with the Raspberry Pi</li>
+                            <li>Created the repository for our website</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
